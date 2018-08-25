@@ -4,6 +4,7 @@
     <script type="text/javascript">
     	$(document).ready(function(){
     		Materialize.updateTexFields();
+    		$(".button-collapse").sideNav();
     	});
     </script>
   </body>
