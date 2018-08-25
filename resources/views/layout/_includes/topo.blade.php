@@ -22,7 +22,7 @@
         </ul>
         <ul class="side-nav" id="mobile">
           <li><a href="/">Home</a></li>
-          <li><a href="sass.html">Cadastrar Noticias</a></li>
+          <li><a href="{{route(admin.noticias)}}">Cadastrar Noticias</a></li>
         </ul>
       </div>
     </nav>
