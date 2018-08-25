@@ -13,13 +13,15 @@
   <body>
     <header>
       <nav>
-      <div class="nav-wrapper">
+      <div class="nav-wrapper deep-blue">
         <a href="#!" class="brand-logo">OceanNoticias</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">Cadastrar Noticias</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="{{route(admin.noticias)}}">Cadastrar Noticias</a></li>
         </ul>
-        <ul class="side-nav" id="mobile-demo">
+        <ul class="side-nav" id="mobile">
+          <li><a href="/">Home</a></li>
           <li><a href="sass.html">Cadastrar Noticias</a></li>
         </ul>
       </div>

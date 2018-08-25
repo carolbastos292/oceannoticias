@@ -15,9 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/*Route::get('/admin/noticias',['as'->'admin.noticias','uses'=>'Admin\NoticiaController@index']);
+/* Rota para a home */
+Route::get('/admin/noticias',['as'->'admin.noticias','uses'=>'Admin\NoticiaController@index']);
+/* Rota para cadastrar noticias */
 Route::get('/admin/noticias/cadastrar',['as'->'admin.noticias.cadastrar','uses'=>'Admin\NoticiaController@cadastrar']);
+/* Rota para salvar noticias */
 Route::post('/admin/noticias/salvar',['as'->'admin.noticias.salvar','uses'=>'Admin\NoticiaController@salvar']);
+/* Rota para editar noticias */
 Route::get('/admin/noticias/editar/{id}',['as'->'admin.noticias.editar','uses'=>'Admin\NoticiaController@editar']);
+/* Rota para atualizar noticias */
 Route::put('/admin/noticias/atualizar/{id}',['as'->'admin.noticias.atualizar','uses'=>'Admin\NoticiaController@atualizar']);
-Route::get('/admin/noticias/deletar/{id}',['as'->'admin.noticias.deletar','uses'=>'Admin\NoticiaController@deletar']);*/
+/* Rota para deletar noticias */
+Route::get('/admin/noticias/deletar/{id}',['as'->'admin.noticias.deletar','uses'=>'Admin\NoticiaController@deletar']);
