@@ -12,11 +12,10 @@
   </head>
   <body>
   <header>
-    <nav>
-      <div class="container">
-        <div class="navbar-fixed">
+    <nav style="background-color:#2196f3">
+        <div class="navbar-fixed container" >
           <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Ocean Noticias</a>
+            <a href="/" class="brand-logo">Ocean Noticias</a>
             <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a href="/">Home</a></li>
@@ -28,7 +27,6 @@
             </ul>
           </div>
         </div>
-      </div>
     </nav>
   </header>
     

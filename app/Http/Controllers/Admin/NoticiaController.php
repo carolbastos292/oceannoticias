@@ -12,5 +12,9 @@ class NoticiaController extends Controller
     	$registros = Noticia::all();
     	return view('admin.noticias.index',compact('registros'));
     }
+    public function cadastrar()
+    {
+    	return view('admin.noticias.cadastrar');
+    }
 
 }
