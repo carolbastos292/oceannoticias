@@ -6,6 +6,7 @@
     <script type="text/javascript">
     	 $(document).ready(function() {
             Materialize.updateTextFields();
+            $(".button-collapse").sideNav();
          });
 
     </script>

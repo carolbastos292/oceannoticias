@@ -3,5 +3,7 @@
 @section('titulo','Noticias')
 
 @section('conteudo')
-	<h3>Lista de noticias</h3>
+	<div class="container">
+		<h3 class="center">Lista de noticiassss</h3>
+	</div>
 @endsection
