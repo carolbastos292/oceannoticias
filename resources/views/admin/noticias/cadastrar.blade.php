@@ -4,7 +4,7 @@
 
 @section('conteudo')
 	<div class="container">
-		<h3 class="center">Cadastrar Notícias</h3>
+		<h3 class="center">Cadastrar Notícia</h3>
 		<div class="center">
 			<div class="row">
 				<form class="col s12" action="{{route('admin.noticias.salvar')}}" method="post" enctype="multipart/form-data">
