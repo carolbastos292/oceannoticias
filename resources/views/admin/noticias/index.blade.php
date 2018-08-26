@@ -3,5 +3,5 @@
 @section('titulo','Noticias')
 
 @section('conteudo')
-	<h3>Sessão index noticias</h3>
+	<h3>Lista de noticias</h3>
 @endsection
