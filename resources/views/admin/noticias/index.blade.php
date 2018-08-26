@@ -5,9 +5,9 @@
 @section('conteudo')
 	<div class="container">
 		<h3 class="center">Últimas Notícias</h3>
-		<div class="row">
-			<a class="btn blue" href="{{route('admin.noticias.cadastrar')}}">Cadastrar</a>
-		</div><br><br>
+		<div class="row right">
+			<a class="btn orange" href="{{route('admin.noticias.cadastrar')}}">Cadastrar</a>
+		</div><br>
 		<div class="row">
 			<table>
 				<thead>
@@ -28,7 +28,7 @@
 							<td>{{ $registro->titulo }}</td>
 							<td>{{ $registro->descricao }}</td>
 							<td>{{ $registro->autor }}</td>
-							<td><img width="120" src="{{asset($registro->imagem)}}" alt="{{ $registro->titulo }}"/></td>
+							<td><img height="50" src="{{asset($registro->imagem)}}" alt="{{ $registro->titulo }}"/></td>
 							<td>{{ $registro->created_at }}</td>
 							<td>
 								<a class="btn deep-orange" href="{{route('admin.noticias.editar',$registro->id)}}">Editar</a>
