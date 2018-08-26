@@ -11,20 +11,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-    <header>
+  <header>
     <nav>
-    <div class="nav-wrapper deep-orange">
-      <a href="#!" class="brand-logo">Ocean Noticias</a>
-      <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="/">Home</a></li>
-        <li><a href="{{route('admin.noticias.cadastrar')}}">Cadastrar Noticias</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile">
-        <li><a href="/">Home</a></li>
-        <li><a href="{{route('admin.noticias.cadastrar')}}">Cadastrar Noticias</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+      <div class="container">
+        <div class="navbar-fixed">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Ocean Noticias</a>
+            <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="/">Home</a></li>
+              <li><a href="{{route('admin.noticias.cadastrar')}}">Cadastrar Noticias</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile">
+              <li><a href="/">Home</a></li>
+              <li><a href="{{route('admin.noticias.cadastrar')}}">Cadastrar Noticias</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+    
    

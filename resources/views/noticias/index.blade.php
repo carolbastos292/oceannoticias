@@ -1,6 +1,6 @@
 @extends('layout.template')
 
-@section('titulo','Noticias')
+@section('titulo','Ocean Noticias')
 
 @section('conteudo')
 	<h3>Essa é a view Index de noticias</h3>

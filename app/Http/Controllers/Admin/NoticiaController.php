@@ -4,13 +4,13 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Noticia;
 
 class NoticiaController extends Controller
 {
     public function index(){
-
-    	return view('admin.noticias.index');
+    	$registros = Noticia::all();
+    	return view('admin.noticias.index',compact('registros'));
     }
 
 }
