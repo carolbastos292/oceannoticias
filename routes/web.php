@@ -29,3 +29,5 @@ Route::get('/admin/noticias/editar/{id}',['as'=>'admin.noticias.editar','uses'=>
 Route::put('/admin/noticias/atualizar/{id}',['as'=>'admin.noticias.atualizar','uses'=>'Admin\NoticiaController@atualizar']);
 /* Rota para deletar noticias */
 Route::get('/admin/noticias/deletar/{id}',['as'=>'admin.noticias.deletar','uses'=>'Admin\NoticiaController@deletar']);
+/* Rota para visualizar noticias */
+Route::get('/admin/noticias/visualizar/{id}',['as'=>'admin.noticias.visualizar','uses'=>'Admin\NoticiaController@visualizar']);

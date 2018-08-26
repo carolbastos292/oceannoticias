@@ -8,7 +8,7 @@
 		<div class="row">
 			<a class="btn blue" href="{{route('admin.noticias.cadastrar')}}">Cadastrar</a>
 		</div><br><br>
-		<!--<div class="row">
+		<div class="row">
 			<table>
 				<thead>
 					<tr>
@@ -31,14 +31,15 @@
 							<td>
 								<a class="btn deep-orange" href="{{route('admin.noticias.editar',$registro->id)}}">Editar</a>
 								<a class="btn red" href="{{route('admin.noticias.deletar',$registro->id)}}">Deletar</a>
+								<a class="btn blue" href="{{route('admin.noticias.visualizar',$registro->id)}}">Visualizar</a>
 							</td>
 						</tr>
 					@endforeach
 				</tbody>
 			</table>
-		</div>-->
+		</div>
 
-		  <div class="row">
+		 <!-- <div class="row">
 		    <div class="col s12 m6">
 		      <div class="card">
 		        <div class="card-image">
@@ -51,7 +52,7 @@
 		        </div>
 		      </div>
 		    </div>
-		  </div>
+		  </div>-->
 		
 	</div>
 @endsection
