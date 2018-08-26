@@ -13,9 +13,10 @@
 				<thead>
 					<tr>
 						<th>ID</th>
-						<th>Descrição resumida</th>
-						<th>Imagem</th>
+						<th>Titulo</th>
+						<th>Descrição</th>
 						<th>Autor</th>
+						<th>Imagem</th>
 						<th>Data</th>
 						<th>Ação</th>
 					</tr>
@@ -26,8 +27,9 @@
 							<td>{{ $registro->id }}</td>
 							<td>{{ $registro->titulo }}</td>
 							<td>{{ $registro->descricao }}</td>
+							<td>{{ $registro->autor }}</td>
 							<td><img width="120" src="{{asset($registro->imagem)}}" alt="{{ $registro->titulo }}"/></td>
-							<td>{{ $registro-> publicado }}</td>
+							<td>{{ $registro->created_at }}</td>
 							<td>
 								<a class="btn deep-orange" href="{{route('admin.noticias.editar',$registro->id)}}">Editar</a>
 								<a class="btn red" href="{{route('admin.noticias.deletar',$registro->id)}}">Deletar</a>
