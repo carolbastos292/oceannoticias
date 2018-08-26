@@ -11,13 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+/* Rota para home */
+Route::get('/',['as'=>'site.home','uses'=>'Site\HomeController@index']);
 
 Route::get('/noticias/{id?}',['uses'=>'NoticiaController@index']);
 
-/* Rota para a home */
+/* Rota para noticias listar noticias */
 Route::get('/admin/noticias',['as'=>'admin.noticias','uses'=>'Admin\NoticiaController@index']);
 /* Rota para cadastrar noticias */
 Route::get('/admin/noticias/cadastrar',['as'=>'admin.noticias.cadastrar','uses'=>'Admin\NoticiaController@cadastrar']);
