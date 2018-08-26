@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/noticias/{id?}',['uses'=>'NoticiaController@index']);
+
 /* Rota para a home */
 Route::get('/admin/noticias',['as'=>'admin.noticias','uses'=>'Admin\NoticiaController@index']);
 /* Rota para cadastrar noticias */
