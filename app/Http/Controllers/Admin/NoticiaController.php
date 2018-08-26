@@ -77,4 +77,10 @@ class NoticiaController extends Controller
     	return redirect()->route('admin.noticias');
     }
 
+    public function deletar($id)
+    {
+    	Noticia::find($id)->delete();
+    	return redirect()->route('admin.noticias');
+    }
+
 }
