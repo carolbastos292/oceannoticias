@@ -17,12 +17,12 @@
 
 		<!--Botão de ação flutuante -->
         <div class="fixed-action-btn">
-		  <a class="btn-floating btn-large  indigo darken-4 pulse">
+		  <a class="btn-floating btn-large indigo darken-4 pulse">
 		    <i class="large material-icons">menu</i>
 		  </a>
 		  <ul>
-		    <li><a class="btn-floating red" href="{{route('noticias.editar',$registro->id)}}"><i class="material-icons">mode_edit</i></a></li>
-		    <li><a class="btn-floating amber darken-1" href="{{route('noticias.deletar',$registro->id)}}"><i class="material-icons">delete</i></a></li>
+		    <li><a class="btn-floating btn-large amber darken-1" href="{{route('noticias.editar',$registro->id)}}"><i class="material-icons">mode_edit</i></a></li>
+		    <li><a class="btn-floating btn-large red" href="{{route('noticias.deletar',$registro->id)}}"><i class="material-icons">delete_forever</i></a></li>
 		  </ul>
 		</div>
 	</div>
