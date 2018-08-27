@@ -12,7 +12,7 @@
   </head>
   <body>
   <header>
-    <nav style="background-color:#2196f3">
+    <nav style="background-color:#2f4d90">
         <div class="navbar-fixed container" >
           <div class="nav-wrapper">
             <a href="/" class="brand-logo">Ocean Noticias</a>
