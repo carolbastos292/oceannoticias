@@ -12,7 +12,6 @@
                     <div class="card hoverable">
                         <div class="card-image">
                           <img  height="190"src="{{asset($noticia->imagem)}}">
-                          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                         </div>
                         <div class="card-content">
                             <h5 class="truncate">{{$noticia->titulo}}</h5>
