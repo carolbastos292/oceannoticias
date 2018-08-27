@@ -14,19 +14,19 @@
 /* Rota para home */
 Route::get('/',['as'=>'site.home','uses'=>'Site\HomeController@index']);
 
-Route::get('/noticias/{id?}',['uses'=>'NoticiaController@index']);
 
-/* Rota para noticias listar noticias */
-Route::get('/admin/noticias',['as'=>'admin.noticias','uses'=>'Admin\NoticiaController@index']);
+
+/* Rota para listar noticias */
+Route::get('/noticias',['as'=>'noticias','uses'=>'NoticiaController@index']);
 /* Rota para cadastrar noticias */
-Route::get('/admin/noticias/cadastrar',['as'=>'admin.noticias.cadastrar','uses'=>'Admin\NoticiaController@cadastrar']);
+Route::get('/noticias/cadastrar',['as'=>'noticias.cadastrar','uses'=>'NoticiaController@cadastrar']);
 /* Rota para salvar noticias */
-Route::post('/admin/noticias/salvar',['as'=>'admin.noticias.salvar','uses'=>'Admin\NoticiaController@salvar']);
+Route::post('/noticias/salvar',['as'=>'noticias.salvar','uses'=>'NoticiaController@salvar']);
 /* Rota para editar noticias */
-Route::get('/admin/noticias/editar/{id}',['as'=>'admin.noticias.editar','uses'=>'Admin\NoticiaController@editar']);
+Route::get('/noticias/editar/{id}',['as'=>'noticias.editar','uses'=>'NoticiaController@editar']);
 /* Rota para atualizar noticias */
-Route::put('/admin/noticias/atualizar/{id}',['as'=>'admin.noticias.atualizar','uses'=>'Admin\NoticiaController@atualizar']);
+Route::put('/noticias/atualizar/{id}',['as'=>'noticias.atualizar','uses'=>'NoticiaController@atualizar']);
 /* Rota para deletar noticias */
-Route::get('/admin/noticias/deletar/{id}',['as'=>'admin.noticias.deletar','uses'=>'Admin\NoticiaController@deletar']);
+Route::get('/noticias/deletar/{id}',['as'=>'noticias.deletar','uses'=>'NoticiaController@deletar']);
 /* Rota para visualizar noticias */
-Route::get('/admin/noticias/visualizar/{id}',['as'=>'admin.noticias.visualizar','uses'=>'Admin\NoticiaController@visualizar']);
+Route::get('/noticias/visualizar/{id}',['as'=>'noticias.visualizar','uses'=>'NoticiaController@visualizar']);

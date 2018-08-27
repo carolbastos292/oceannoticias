@@ -19,11 +19,11 @@
             <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a href="/">Home</a></li>
-              <li><a href="{{route('admin.noticias.cadastrar')}}">Cadastrar Noticias</a></li>
+              <li><a href="{{route('noticias.cadastrar')}}">Cadastrar Noticias</a></li>
             </ul>
             <ul class="side-nav" id="mobile">
               <li><a href="/">Home</a></li>
-              <li><a href="{{route('admin.noticias.cadastrar')}}">Cadastrar Noticias</a></li>
+              <li><a href="{{route('noticias.cadastrar')}}">Cadastrar Noticias</a></li>
             </ul>
           </div>
         </div>

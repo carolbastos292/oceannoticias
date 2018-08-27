@@ -11,7 +11,7 @@
                 <div class="col s12 m3">
                     <div class="card hoverable">
                         <div class="card-image">
-                          <img  height="190"src="{{asset($noticia->imagem)}}">
+                          <img  height="190" src="{{asset($noticia->imagem)}}">
                         </div>
                         <div class="card-content">
                             <div class="row">
@@ -24,7 +24,7 @@
                             
                         </div>
                         <div class="card-action center"> 
-                                <a href="{{route('admin.noticias.visualizar',$noticia->id)}}">Ver mais...</a>
+                                <a href="{{route('noticias.visualizar',$noticia->id)}}">Ver mais...</a>
                         </div>
                     </div>
                 </div>

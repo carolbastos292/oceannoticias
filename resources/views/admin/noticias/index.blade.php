@@ -31,9 +31,9 @@
 							<td><img height="50" src="{{asset($registro->imagem)}}" alt="{{ $registro->titulo }}"/></td>
 							<td>{{ $registro->created_at }}</td>
 							<td>
-								<a class="btn deep-orange" href="{{route('admin.noticias.editar',$registro->id)}}">Editar</a>
-								<a class="btn red" href="{{route('admin.noticias.deletar',$registro->id)}}">Deletar</a>
-								<a class="btn blue" href="{{route('admin.noticias.visualizar',$registro->id)}}">Visualizar</a>
+								<a class="btn deep-orange" href="{{route('noticias.editar',$registro->id)}}">Editar</a>
+								<a class="btn red" href="{{route('noticias.deletar',$registro->id)}}">Deletar</a>
+								<a class="btn blue" href="{{route('noticias.visualizar',$registro->id)}}">Visualizar</a>
 							</td>
 						</tr>
 					@endforeach

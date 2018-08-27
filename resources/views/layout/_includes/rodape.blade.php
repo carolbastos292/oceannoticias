@@ -8,8 +8,8 @@
             Materialize.updateTextFields();
             $(".button-collapse").sideNav();
          });
-
     </script>
+    
     <br> <br>
     <footer class="page-footer" style="background-color:#2f4d90">
       <div class="container">

@@ -10,11 +10,11 @@ class NoticiaController extends Controller
 {
     public function index(){
     	$registros = Noticia::all();
-    	return view('admin.noticias.index',compact('registros'));
+    	return view('noticias.index',compact('registros'));
     }
     public function cadastrar()
     {
-    	return view('admin.noticias.cadastrar');
+    	return view('noticias.cadastrar');
     }
 
     public function salvar(Request $req)
@@ -41,13 +41,13 @@ class NoticiaController extends Controller
 
     	Noticia::create($dados);
 
-    	return redirect()->route('admin.noticias');
+    	return redirect()->route('noticias');
     }
 
     public function editar($id)
     {
     	$registro = Noticia::find($id);
-    	return view('admin.noticias.editar',compact('registro'));
+    	return view('noticias.editar',compact('registro'));
     }
 
     public function atualizar(Request $req,$id)
@@ -74,19 +74,19 @@ class NoticiaController extends Controller
 
     	Noticia::find($id)->update($dados);
 
-    	return redirect()->route('admin.noticias');
+    	return redirect()->route('noticias');
     }
 
     public function deletar($id)
     {
     	Noticia::find($id)->delete();
-    	return redirect()->route('admin.noticias');
+    	return redirect()->route('noticias.index');
     }
 
     public function visualizar($id)
     {
         $registro = Noticia::find($id);
-        return view('admin.noticias.visualizar',compact('registro'));
+        return view('noticias.visualizar',compact('registro'));
     }
 
 
