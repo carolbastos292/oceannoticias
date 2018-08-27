@@ -13,9 +13,6 @@
 
 /* Rota para home */
 Route::get('/',['as'=>'site.home','uses'=>'Site\HomeController@index']);
-
-/* Rota para listar noticias */
-Route::get('/noticias',['as'=>'noticias','uses'=>'NoticiaController@index']);
 /* Rota para cadastrar noticias */
 Route::get('/noticias/cadastrar',['as'=>'noticias.cadastrar','uses'=>'NoticiaController@cadastrar']);
 /* Rota para salvar noticias */
