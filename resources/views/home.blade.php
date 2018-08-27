@@ -14,9 +14,14 @@
                           <img  height="190"src="{{asset($noticia->imagem)}}">
                         </div>
                         <div class="card-content">
+                            <div class="row">
+                              <h6 class="col s6 grey-text darken-3 truncate ">{{$noticia->autor}}</h6>
+                              <h6 class="col s6 grey-text darken-1" align="right">{{ date( 'd/m/Y' , strtotime($noticia->created_at))}}</h6>
+                            </div>
+                             
                             <h5 class="truncate">{{$noticia->titulo}}</h5>
                             <p class="truncate">{{$noticia->descricao}}</p>
-                            <h6 class="grey-text darken-1" align="right">{{ date( 'd/m/Y' , strtotime($noticia->created_at))}}</h6>     
+                            
                         </div>
                         <div class="card-action center"> 
                                 <a href="{{route('admin.noticias.visualizar',$noticia->id)}}">Ver mais...</a>
