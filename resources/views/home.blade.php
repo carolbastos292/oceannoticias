@@ -5,26 +5,23 @@
 @section('conteudo')
     <div class="container">
         <h3 class="center">Últimas Notícias</h3>
-        <div class="row right">
-            <a class="btn orange" href="{{route('admin.noticias.cadastrar')}}">Cadastrar</a>
-        </div>
         <br>
         <div class="row">
             @foreach($noticias as $noticia)
                 <div class="col s12 m3">
-                    <div class="card">
+                    <div class="card hoverable">
                         <div class="card-image">
                           <img  height="190"src="{{asset($noticia->imagem)}}">
                           <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                         </div>
                         <div class="card-content">
-                            <h4>{{$noticia->titulo}}</h4>
-                            <p>{{$noticia->descricao}}</p>
-                            
+                            <h5 class="truncate">{{$noticia->titulo}}</h5>
+                            <p class="truncate">{{$noticia->descricao}}</p>
+                            <h6 class="grey-text darken-1" align="right">{{ date( 'd/m/Y' , strtotime($noticia->created_at))}}</h6>     
                         </div>
-                        <div class="card-action">
-                                <h6 class="" align="right">{{ date( 'd/m/Y' , strtotime($noticia->created_at))}}</h6> 
-                                <a align="center" href="#">Ver mais...</a>
+                        <div class="card-action center">
+                                 
+                                <a href="#">Ver mais...</a>
                           
                         </div>
                     </div>
