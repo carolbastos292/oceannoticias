@@ -83,4 +83,12 @@ class NoticiaController extends Controller
     	return redirect()->route('admin.noticias');
     }
 
+    public function visualizar($id)
+    {
+        $registro = Noticia::find($id);
+        return view('admin.noticias.visualizar',compact('registro'));
+    }
+
+
+
 }

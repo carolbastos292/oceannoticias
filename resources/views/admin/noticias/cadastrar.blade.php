@@ -9,8 +9,7 @@
 			<div class="row">
 				<form class="col s12" action="{{route('admin.noticias.salvar')}}" method="post" enctype="multipart/form-data">
 					{{ csrf_field() }}
-					@include('admin.noticias._form')
-					
+					@include('admin.noticias._form')				
 					<br>
 					<div class="center">
 				  		<button class="btn waves-effect waves-light btn-large " type="submit" name="action">Salvar

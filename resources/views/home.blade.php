@@ -19,10 +19,8 @@
                             <p class="truncate">{{$noticia->descricao}}</p>
                             <h6 class="grey-text darken-1" align="right">{{ date( 'd/m/Y' , strtotime($noticia->created_at))}}</h6>     
                         </div>
-                        <div class="card-action center">
-                                 
-                                <a href="#">Ver mais...</a>
-                          
+                        <div class="card-action center"> 
+                                <a href="{{route('admin.noticias.visualizar',$noticia->id)}}">Ver mais...</a>
                         </div>
                     </div>
                 </div>

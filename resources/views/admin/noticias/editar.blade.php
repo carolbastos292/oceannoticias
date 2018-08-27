@@ -11,7 +11,6 @@
 					{{ csrf_field() }}
 					<input type="hidden" name="_method" value="put">
 					@include('admin.noticias._form')
-					
 					<br>
 					<div class="center">
 				  		<button class="btn waves-effect waves-light btn-large " type="submit" name="action">Atualizar
