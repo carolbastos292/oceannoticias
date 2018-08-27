@@ -20,13 +20,19 @@
                         <div class="card-content">
                             <h4>{{$noticia->titulo}}</h4>
                             <p>{{$noticia->descricao}}</p>
+                            
                         </div>
                         <div class="card-action">
-                            <a href="#">Ver mais...</a>
+                                <h6 class="" align="right">{{ date( 'd/m/Y' , strtotime($noticia->created_at))}}</h6> 
+                                <a align="center" href="#">Ver mais...</a>
+                          
                         </div>
                     </div>
                 </div>
             @endforeach
+        </div>
+        <div class="row " align="center">
+            {{$noticias->links()}}
         </div>
         
     </div>

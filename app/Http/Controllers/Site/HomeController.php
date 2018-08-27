@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-    	$noticias = Noticia::all();
+    	$noticias = Noticia::paginate(20);
     	return view('home',compact('noticias'));
     }
 }
