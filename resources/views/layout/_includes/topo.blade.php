@@ -7,16 +7,16 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
-
+    <link rel="stylesheet" href="<?php echo asset('css/style.css')?>" type="text/css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
   <header>
-    <nav style="background-color:#2f4d90">
+    <nav >
         <div class="navbar-fixed container" >
           <div class="nav-wrapper">
-            <a href="/" class="brand-logo">Ocean Noticias</a>
+            <a href="/" class="brand-logo"><div class="nomeSite">Ocean Noticias</div></a>
             <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a href="/">Home</a></li>
