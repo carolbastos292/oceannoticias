@@ -13,10 +13,10 @@
   </head>
   <body>
   <header>
-    <nav >
+    <nav>
         <div class="navbar-fixed container" >
           <div class="nav-wrapper">
-            <a href="/" class="brand-logo"><div class="nomeSite">Ocean Noticias</div></a>
+            <a href="/" class="brand-logo"><div class="flow-text">Ocean Noticias</div></a>
             <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a href="/">Home</a></li>
