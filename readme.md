@@ -6,15 +6,30 @@ Estrutura do projeto
 
 O projeto segue o modelo MVC
 
-A model se encontra no arquivo Noticia.php que se encontra dentro da pasta app
+Na pasta app
+● Http/Controller/Site/HomeController.php - paginação das noticias na página home se encontra no diretorio 
+● Http/Controller/NoticiaController.php - foram criadas todas as funções para as manipulações das rotas, tratamentos das imagens, atualização, remoção, cadastro, edição e visualização dos dados
+● Noticia.php - Model do projeto
 
-Todas as views se encontram nos diretorio resources/views, dentro da view criei uma pasta chamada layout que contem dois arquivos 
-o rodape e o topo, criei eles pra não ter que repetir os códigos do topo e do rodapé em todas as páginas. 
-Dentro da pasta noticias contem todos as página de cadastro, edição e visualização das notícias.
-E dentro do diretório view contem a página home.blade.php que mostra a listagem das noticias cadastradas.
+Na pasta database
+● /database/ - pasta com o banco de dados 
+● comicsnews.sql - Banco a ser importado
+● /migrations/2018_08_26_005625_create_noticias_table.php - Migrations são compostas pelas estruturas das tabelas do banco de dados e são como uma espécie de backup desta mesma estrutura
 
-Dentro do diretorio app/Http/NoticiaController.php foram criadas todas as funções para as manipulações das rotas, tratamentos das imagens, atualização, remoção, cadastro, edição e visualização dos dados.
- 
-A paginação das noticias na página home se encontra no diretorio Site/HomeController.php
+Na pasta public
+● css - folhas de estilo do projeto
+● js - scripts front-end do projeto
+● img/noticias - Imagens das noticias cadastradas
 
-As routas se encontram no diretório routes/web.php
+Na pasta resources
+● home.blade.php - página principal do projeto que mostra a listagem das noticias cadastradas
+● views/noticias/_form.blade.php - Estrutura para os inputs do formulario de cadastro de noticias
+● views/noticias/cadastrar.blade.php - página de cadastrar uma notícia
+● views/noticias/visualizar.blade.php - página de visualizar uma notícia selecionada
+● views/noticias/editar.blade - Pagina para atualizar dados cadastrados
+
+Na pasta routes
+● web.php - Arquivo php que se encontram as routas do projeto
+
+Na pasta raíz
+● .env - Arquivos que faz conexão com o Banco de Dados
